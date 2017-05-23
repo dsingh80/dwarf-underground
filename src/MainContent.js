@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Article from './Article'
 import Ad from './Ad'
 import OtherArticles from './OtherArticles'
-import './MainContent.css'
 
 const otherArticles = [
   {
