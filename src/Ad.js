@@ -6,9 +6,9 @@ class App extends Component{
         return(
             <aside className="large-4 medium-12 columns">
             <div className="ad">
-              <h3>The Last Hammer You'll Ever Need</h3>
+              <h3>{this.props.name}</h3>
               <div className="ad-image">
-                <img src="https://s-media-cache-ak0.pinimg.com/originals/b4/d5/ab/b4d5ab4a82b8f7efc1adaf548df1d089.jpg" alt="hammer" />
+                <img src={this.props.img} alt={this.props.alt} />
                 <a href="#">visit sponsor</a>
               </div>  
               <h4>Mining diamonds or crushing the skulls of your enemies, the SmashMaster 4000 does it all</h4>
