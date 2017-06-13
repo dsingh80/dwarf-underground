@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import OtherArticle from './OtherArticle';
 
 class RelatedArticles extends Component{
-    addArticle(article){
+    addArticle(article, index){
         console.log(this);
         return (
-            <OtherArticle message={article.message} img={article.img} alt={article.alt} />
+            <OtherArticle message={article.message} img={article.img} alt={article.alt} key={index}/>
         )
     }
 

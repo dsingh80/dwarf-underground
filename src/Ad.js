@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Ad.css';
 
-class App extends Component{
+class Ad extends Component{
     render(){
         return(
             <aside className="large-4 medium-12 columns">
@@ -21,4 +21,4 @@ class App extends Component{
     }
 }
 
-export default App;
+export default Ad;
