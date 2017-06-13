@@ -1,0 +1,28 @@
+#addCommentForm{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#addCommentForm input{
+    margin: 4px 0;
+}
+
+#addCommentForm textarea{
+    margin: 4px 0;
+}
+
+#addCommentForm button{
+    color: #FFF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#addCommentForm button:nth-child(odd){
+    background-color: #CFB53B;
+}
+
+#comments{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Comment from './Comment.js';
+import './Comments.css';
 
 class Comments extends Component{
     constructor(){
@@ -15,12 +16,14 @@ class Comments extends Component{
         ev.preventDefault();
         const newComment = {
             name: form.name.value,
-            message: form.message.value,
+            message: form.querySelector('textarea').value,
         }
 
         const comments = [... this.state.comments];
         comments.push(newComment);
         this.setState({comments})
+
+        form.reset();
     }
 
     writeComment(comment, index){
@@ -31,7 +34,7 @@ class Comments extends Component{
             <div style={{display: this.props.displayComments}}>
                 <form id="addCommentForm" onSubmit={this.handleSubmit.bind(this)}>
                     <input type="text" placeholder="What's yer name?" name="name" required autofocus></input>
-                    <input type="text" placeholder="Add comment message here. Please be respectful" name="message" required></input>
+                    <textarea rows="4" cols="50" maxlength="250" required></textarea>
                     <button type="submit">Say it ta' his face</button>
                 </form>
 

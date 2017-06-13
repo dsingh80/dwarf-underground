@@ -1,15 +1,34 @@
-.class{
+.comment{
     text-decoration: none;
     font-family: "Arial", "Sans-serif", "Georgia";
+    background: rgba(230,190,100,.15);
+    padding: 10px;
+    min-height: 100px;
+    margin-top: 10px;
 }
 
-.class h1{
-    font-size: 20px;
+.username{
+    font-size: 21px;
     font-weight: bold;
-
+    margin-bottom: 0;
+    font-family: "Arial", "Sans-serif", "Georgia";
+    
 }
 
-.class p{
-    font-size: 14px;
+.message{
+    font-size: 21px;
     color: #333;
+    margin-bottom: 0;
+}
+
+.message.hidden{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.comment button{
+    font-size: 15px;
+    color: #AAA;
+    padding: 5px;
 }
